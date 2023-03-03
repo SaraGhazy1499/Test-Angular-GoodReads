@@ -1,0 +1,29 @@
+table
+{
+  width: 95%;
+}
+
+tr td , tr th
+{
+  padding: 1% 0%;
+}
+
+tbody tr:nth-child(odd)
+{
+
+  background-color: gainsboro;
+}
+
+td button i
+{
+  font-size: 1.4rem;
+}
+.add
+{
+  margin-left: 87%;
+}
+.add i
+{
+  font-size: 2rem;
+  color:#18AF9A;
+}
