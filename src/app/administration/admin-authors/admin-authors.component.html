@@ -24,8 +24,8 @@
         <td>12345</td>
         <td>2787</td>
         <td>
-          <button class="btn "><i class="fa fa-trash text-danger"></i></button>
-          <button class="btn"><i class="fa fa-edit text-primary"></i></button>
+          <button class="btn"><i class="fa fa-trash text-danger"></i></button>
+          <button class="btn"  data-bs-toggle="modal" data-bs-target="#EditModal"><i class="fa fa-edit text-primary"></i></button>
         </td>
       </tr>
 
@@ -37,20 +37,7 @@
         <td>2787</td>
         <td>
           <button class="btn "><i class="fa fa-trash text-danger"></i></button>
-          <button class="btn"><i class="fa fa-edit text-primary"></i></button>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td>1</td>
-        <td></td>
-        <td>Book1</td>
-        <td>12345</td>
-        <td>2787</td>
-        <td>
-          <button class="btn "><i class="fa fa-trash text-danger"></i></button>
-          <button class="btn"><i class="fa fa-edit text-primary"></i></button>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#EditModal"><i class="fa fa-edit text-primary"></i></button>
         </td>
       </tr>
 
@@ -63,7 +50,20 @@
         <td>2787</td>
         <td>
           <button class="btn "><i class="fa fa-trash text-danger"></i></button>
-          <button class="btn"><i class="fa fa-edit text-primary"></i></button>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#EditModal"><i class="fa fa-edit text-primary"></i></button>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>1</td>
+        <td></td>
+        <td>Book1</td>
+        <td>12345</td>
+        <td>2787</td>
+        <td>
+          <button class="btn "><i class="fa fa-trash text-danger"></i></button>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#EditModal"><i class="fa fa-edit text-primary"></i></button>
         </td>
       </tr>
 
@@ -75,7 +75,7 @@
         <td>2787</td>
         <td>
           <button class="btn "><i class="fa fa-trash text-danger"></i></button>
-          <button class="btn"><i class="fa fa-edit text-primary"></i></button>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#EditModal"><i class="fa fa-edit text-primary"></i></button>
         </td>
       </tr>
     </tbody>
@@ -89,6 +89,49 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Add Author</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+      <div class="modal-body">
+          <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="FirstName">
+          </div>
+
+          <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="LastName">
+          </div>
+
+          <div class="form-group">
+
+            <input type="date" class="form-control" placeholder="DB">
+          </div>
+
+
+
+          <div class="form-group">
+            <input type="file" class="form-control">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn" style="background: #18AF9A">Save</button>
+      </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!---------------------Edit Authors----------------------------->
+<div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mt-5">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Author</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form>
