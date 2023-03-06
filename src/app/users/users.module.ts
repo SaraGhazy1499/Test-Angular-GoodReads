@@ -11,6 +11,10 @@ import { UserCategoryDetailsComponent } from './categories/user-category-details
 import { UserHeaderComponent } from './user-layout/user-header/user-header.component';
 import { UserSidebarComponent } from './user-layout/user-sidebar/user-sidebar.component';
 import { UserFooterComponent } from './user-layout/user-footer/user-footer.component';
+import { UserShowComponent } from './user-show/user-show.component';
+import { UserStatusReadingComponent } from './user-status-reading/user-status-reading.component';
+import { UserBookReviewsComponent } from './books/user-book-reviews/user-book-reviews.component';
+import { UserAuthorBooksComponent } from './authors/user-author-books/user-author-books.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { UserFooterComponent } from './user-layout/user-footer/user-footer.compo
     UserCategoryDetailsComponent,
     UserHeaderComponent,
     UserSidebarComponent,
-    UserFooterComponent
+    UserFooterComponent,
+    UserShowComponent,
+    UserStatusReadingComponent,
+    UserBookReviewsComponent,
+    UserAuthorBooksComponent
   ],
   imports: [
     CommonModule,
